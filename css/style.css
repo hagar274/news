@@ -189,6 +189,9 @@ header.shadow .logo{
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
 }
 .footer p{
     font-size: 1rem;
@@ -282,11 +285,72 @@ section{
     margin-top: 3rem !important;
 }
 .home{
-    width: 100%;
+    /* width: 100%; */
     min-height: 380px;
-    background: var(--container-color);
+    /* background: var(--container-color);
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
+.home-title{
+    font-size: 3rem;
+}
+.header-title{
+    font-size: 2rem;
+}
+.header-img{
+    height: 370px;
+}
+.post-header{
+    height: 435px;
+}
+.post-content{
+    margin-top: 9rem !important;
+}
+}
+@media(max-width:570px){
+    .post-header{
+        height: 390px;
+    }
+    .header-title{
+        width: 100%;
+    }
+    .header-img{
+        height: 340px;
+    }
+    .footer{
+        padding: 20px 0;
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+}
+@media(max-widtj:396px){
+    .home-title{
+        font-size: 2rem;
+    }
+    .home-subtitle{
+        font-size: 1rem;
+    }
+    .home{
+        min-height: 300px;
+    }
+    .post-box{
+        padding: 10px;
+    }
+    .header-title{
+        font-size: 1.5rem;
+    }
+    .post-header{
+        height: 335px;
+    }
+    .post-content{
+        margin-top: 5rem !important;
+    }
+    .post-text{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 10px 0;
+        /* text-align: justifyd; */
+    }
 }
